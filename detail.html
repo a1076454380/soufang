@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='js/jquery-2.1.1.min.js'></script>
+    <script src='js/swiper.min.js'></script>
+    <script src='js/jquery.tabs.js'></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="js/fdj.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <!-- 当前页面 -->
+    <link rel="stylesheet" href="css/detail.css">
+
+    <title>新房详情</title>
+</head>
+<body>
+<!-- 头部导航 -->
+<div class="newnav">
+			<div class="newnavnr">
+				<div class="s5" id="dsy_D01_02">
+					<div class="s4Box">
+						<a href="" target="_self"><img src="imgs/789.gif" style="margin-top: 12px;"/></a>
+					</div>
+				</div>
+				<div class="s5" style="background-image:none" id="dsy_D01_15">
+					<div class="s4Box">
+						<a href="http://xz.fang.com" target="_self">首页</a>
+					</div>
+				</div>
+				<div class="s5" id="dsy_D01_02">
+					<div class="s4Box">
+						<a href="" target="_self">新房</a>
+					</div>
+				</div>
+				<div class="s6" id="dsy_D01_03">
+					<div class="s4Box">
+						<a href="" target="_self">二手房</a>
+					</div>
+				</div>
+				<div class="s5" id="dsy_D01_04">
+					<div class="s4Box">
+						<a href="" target="_self">租房</a>
+					</div>
+				</div>
+				<div class="s6" style="background-image:none" id="dsy_D01_05">
+					<div class="s4Box">
+						<a href="" target="_self">查房价</a>
+					</div>
+
+				</div>
+				<div class="s7" id="dsy_D01_06">
+					<div class="s4Box">
+						<a href="" target="_self">装修家居</a>
+					</div>
+				</div>
+				<div class="s7" style="background-image:none" id="dsy_D01_14">
+					<div class="s4Box">
+						<a href="" target="_blank">移动APP</a>
+					</div>
+				</div>
+				<div class="s4a" id="dsy_D01_88">
+					<div class="s4Box">
+						<a href="">搜房帮</a>
+					</div>
+				</div>
+				<div class="sline" id="slineId"></div>
+
+				<div class="s4a" id="dsy_D01_13">
+					<div class="s4Box">
+						<a href='https://passport.fang.com/'>登录</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+		</div>
+<!-- 1200px的版心 -->
+<div class="content">
+    <div class="content-top">
+        <p class="p">
+        	<span>房天下&nbsp;&gt;&nbsp;</span>
+        	<span>徐州新房&nbsp;&gt;&nbsp;</span>
+        	<span>铜山区楼盘&nbsp;&gt;&nbsp;</span>
+        	<span>啊啊啊啊</span>
+            <b>2014年12月04日</b>
+        </p>
+        <div>
+            <h3 class="h3_p">
+                <b class="thb">楼盘首页</b>
+                <b >楼盘详情</b>
+                <b >楼盘动态</b>
+                <b >户型</b>
+                <b >房源</b>
+                <b >楼盘点评</b>
+                <b >业主论坛</b>
+                <b >房价走势</b>
+                <b >二手房</b>
+                <b >租房</b>
+                <b >装修效果图</b>
+            </h3>
+           
+        </div>
+    </div>
+
+    <div class="tutu">
+        <div class="fdj-wrap">
+            <div id="preview">
+                <div id="img-medium">
+                    <img src="imgs/01-zhongtu.jpg" alt="" width="600" height="360" />
+                    <div id="mark"></div>
+                </div>
+                <!-- 小图导航开始 -->
+                <div class="img-small">
+                    <a href="javascript:;" class="left" id="left"></a>
+                    <a href="javascript:;" class="right" id="right"></a>
+                    <div class="img-list-items">
+                        <ul id="img-items">
+                            <li>
+                            	<img src="imgs/01.jpg" msrc="imgs/01-zhongtu.jpg" bsrc="imgs/01-datu.jpg" alt="" />
+                            	<div class="text">
+                            		交通图
+                            	</div>
+                            </li>
+                            <li><img src="imgs/02.jpg" msrc="imgs/02-zhongtu.jpg" bsrc="imgs/02-datu.jpg" alt="" />
+                            <div class="text">
+                            		交通图
+                            	</div></li>
+                            <li><img src="imgs/03.jpg" msrc="imgs/03-zhongtu.jpg" bsrc="imgs/03-datu.jpg" alt="" /><div class="text">
+                            		交通图
+                            	</div></li>
+                            <li><img src="imgs/04.jpg" msrc="imgs/04-zhongtu.jpg" bsrc="imgs/04-datu.jpg" alt="" /><div class="text">
+                            		交通图
+                            	</div></li>
+                            <li><img src="imgs/05.jpg" msrc="imgs/05-zhongtu.jpg" bsrc="imgs/05-datu.jpg" alt="" /><div class="text">
+                            		交通图
+                            	</div></li>
+                            <li><img src="imgs/04.jpg" msrc="imgs/04-zhongtu.jpg" bsrc="imgs/04-datu.jpg" alt="" /><div class="text">
+                            		交通图
+                            	</div></li>
+                            <li><img src="imgs/04.jpg" msrc="imgs/04-zhongtu.jpg" bsrc="imgs/04-datu.jpg" alt="" /><div class="text">
+                            		交通图
+                            	</div></li>
+                            <li><img src="imgs/04.jpg" msrc="imgs/04-zhongtu.jpg" bsrc="imgs/04-datu.jpg" alt="" /><div class="text">
+                            		交通图
+                            	</div></li>
+                            <li><img src="imgs/04.jpg" msrc="imgs/04-zhongtu.jpg" bsrc="imgs/04-datu.jpg" alt="" /><div class="text">
+                            		交通图
+                            	</div></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 小图导航结束 -->
+                <div id="img-big">
+                    <img src="imgs/01-datu.jpg" alt="" id="detail" />
+                </div>
+            </div>
+        </div>
+        <div class="fdj-right">
+            <div class="fwb div" style="height: 50px;">
+                云龙华府　
+                <span class="red">3.8</span><i>/5分</i>
+            </div>
+            <div class="div" style="height: 42px;">
+              <span style="font-size: 14px;font-weight: bold;color: #333;"> 价格:　</span> 
+                <b class="red" style="font-size: 24px;font-weight: bold;">8300</b>元/㎡起
+                <span><i class="nav" style="background: url(imgs/jige.png) no-repeat;"></i>价格说明</span>
+                <span><i class="nav" style="background-position: -105px -30px;"></i>查看价格走势</span>
+                <span><i class="nav" style="background-position: -105px -50px;"></i>贷款计算器</span>
+                <span><i class="nav" style="background-position: -162px -280px;"></i>降价通知我</span>
+            </div>
+            <div class="div fwb" style="font-size: 18px;border-bottom: 1px solid #d8d8d8;height: 38px;padding-bottom: 5px;">
+                咨询电话:　400-890-8000<span style="padding: 0 5px;font-size: 14px;color: #333;">转</span>686688
+            </div>
+
+            <div class="div" style="padding-top:10px;">
+                <button class="zi">普通住宅</button>
+                <button class="hong">酒店式公寓</button>
+                <button class="huang">老盘加推</button>
+                <button class="lan">现房</button>
+                <button class="lv">地铁沿线</button>
+            </div>
+            <div class="div" style="font-size: 14px;">
+               <span class="dlstrong"> 主力户型:　</span>
+                <b>一居(建面32㎡)</b>
+                <b>一居(建面45㎡)</b>
+                <b>一居(建面145㎡)</b>
+                <span style="font-size: 12px;"><i class="dlback"></i>全部</span>
+            </div>
+            <div class="div" style="font-size: 14px;">
+               <span class="dlstrong">  项目地址:　</span> 
+                <b>云龙区和平大道与庆丰路交汇处(云龙区政府以南)</b>
+                <span style="font-size: 12px;"><i class="dlback" style="background-position: -105px -160px;"></i>查看地图</span>
+            </div>
+            <div class="div" style="font-size: 14px;">
+                 <span class="dlstrong"> 近期开盘:　</span>
+                <b>2017年11月25日开盘C1#</b>
+                <span style="font-size: 12px;"><i class="dlback" style="background-position: -105px -97px;"></i>交房时间</span>
+                <span style="font-size: 12px;"><i class="dlback" style="background-position: -162px -345px;"></i>开盘通知我</span>
+            </div>
+			<div class="div" style="font-size: 14px;">
+               <span class="dlstrong">  项目地址:　</span> 
+                <b>云龙区和平大道与庆丰路交汇处(云龙区政府以南)</b>
+                <span style="font-size: 12px;"><i class="dlback" style="background-position: -105px -160px;"></i>查看地图</span>
+            </div>
+            <div class="div" style="font-size: 14px;">
+                 <span class="dlstrong"> 近期开盘:　</span>
+                <b>2017年11月25日开盘C1#</b>
+                <span style="font-size: 12px;"><i class="dlback" style="background-position: -105px -97px;"></i>交房时间</span>
+                <span style="font-size: 12px;"><i class="dlback" style="background-position: -162px -345px;"></i>开盘通知我</span>
+            </div>
+            <div class="div dlboder-top">
+                    <span class="dlstrong">  周边顾问:　</span>
+                <div class="div-li">
+                    <div class="li-left">
+                        <img src="imgs/banner.jpg" alt="">
+                    </div>
+                    <div class="li-right">
+                        <p>奥特曼</p>
+                        <p>4009809978</p>
+                        <p>转　123155</p>
+                    </div>
+                </div>
+                <div class="div-li">
+                    <div class="li-left">
+                        <img src="imgs/banner.jpg" alt="">
+                    </div>
+                    <div class="li-right">
+                        <p>奥特曼</p>
+                        <p>4009809978</p>
+                        <p>转　123155</p>
+                    </div>
+                </div>
+                <div class="div-li">
+                    <div class="li-left">
+                        <img src="imgs/banner.jpg" alt="">
+                    </div>
+                    <div class="li-right">
+                        <p>奥特曼</p>
+                        <p>4009809978</p>
+                        <p>转　123155</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div id="dlr">
+		
+	</div>
+    <div class="shapan">
+        <h3>恒大滨江楼信息</h3>
+        <div class="shapan-left">
+            <img src="imgs/banner.jpg" alt="">
+            <div class="text">
+            	沙盘图
+            </div>
+        </div>
+        <div class="shapan-right">
+            <div class="shapan-p">
+            	<div id="shapan" >
+	            	<div id="dlleft"></div>
+	            	<div id="dlright"></div>
+	                <b class="btn on">12#</b>
+	                <b class="btn">14#</b>
+	                <b class="btn">15#</b>
+	                <b class="btn">18#</b>
+	                <b class="btn">12#</b>
+	                <b class="btn">14#</b>
+	                <b class="btn">15#</b>
+	                <b class="btn">18#</b>
+	                <b class="btn">12#</b>
+	                <b class="btn">14#</b>
+	                <b class="btn">15#</b>
+	                <b class="btn">18#</b>
+                </div>
+            </div>
+            <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+            <script type="text/javascript">
+            	$(function(){
+            		var len=$('#shapan .btn')
+            		$('#shapan').css('width',len.length*len[0].offsetWidth)
+            		$('#dlleft').click(function(){
+            			var mleft=parseInt($('#shapan').css('margin-left'))
+            			if(mleft>=0){
+            				
+            			}else{
+            				$('#shapan').css('margin-left',mleft+len[0].offsetWidth+'px')
+            			}
+            		})
+            		$('#dlright').click(function(){
+            			var mleft=parseInt($('#shapan').css('margin-left'))
+            			var lenall='-'+(len.length-5)*len[0].offsetWidth
+            			if(mleft<=lenall){
+            				return
+            			}else{
+            				$('#shapan').css('margin-left',mleft-len[0].offsetWidth+'px')
+            			}
+            		})
+            	})
+            </script>
+            <!--保留p标签不参与循环-->
+            <p class="sp" style="margin-top: 10px;"></p>
+            
+            
+            <p class="sp" style="margin-top: 10px;">
+                <i>单元:<span>2个</span></i>
+                <b>电梯数:<span>3梯5户</span></b>
+            </p>
+            <p class="sp">
+                <i>建筑类型:<span>超高</span></i>
+                <b>楼层:<span>31层</span></b>
+            </p>
+            <p class="sp" style="margin-bottom: 10px;">
+                <i>户数:<span>290户</span></i>
+                <b>在售房源:<span>116套</span></b>
+            </p>
+            <h3>
+                14#户型
+            </h3>
+            <p class="spp" style="margin-top: 10px;">
+                <b>一期19#标准层A户型</b>
+                <span>一是一厅一厨一卫</span>
+                <i>48.00㎡</i>
+                在售
+            </p>
+            <p class="spp">
+                <b>一期19#标准层A户型</b>
+                <span>一是一厅一厨一卫</span>
+                <i>48.00㎡</i>
+                在售
+            </p>
+            <p class="spp">
+                <b>一期19#标准层A户型</b>
+                <span>一是一厅一厨一卫</span>
+                <i>48.00㎡</i>
+                在售
+            </p>
+            <p class="spp" style="margin-bottom: 10px;">
+                <b>一期19#标准层A户型</b>
+                <span>一是一厅一厨一卫</span>
+                <i>48.00㎡</i>
+                在售
+            </p>
+        </div>
+    </div>
+
+    <div class="map">
+        <h3>位置和信息
+            <span class="h3ss">
+                <b><img src="imgs/allview.png" alt="">全屏</b>
+                <b><img src="imgs/house.png" alt="">徐州楼盘地图</b>
+                <b><img src="imgs/juli.png" alt="">测距</b>
+                <b><img src="imgs/teit.png" alt="">公交</b>
+                <b><img src="imgs/car.png" alt="">驾车</b>
+            </span>
+        </h3>
+        <div style="width:1200px;height:390px;border:#ccc solid 1px;" id="dituContent"></div>
+        <div class="maptab">
+            <p class="maptab-p">
+                <b class="pb">楼盘</b>
+                <b>交通</b>
+                <b>商业</b>
+                <b>学校</b>
+                <b>医院</b>
+                <b>嫌恶</b>
+            </p>
+            <div>
+                
+                <p class="mp">
+                    <span><b class="mmpp mpb">别墅</b></span>
+                    <span><b class="mmpp">住宅</b></span>
+                    <span><b class="mmpp">商铺</b></span>
+                </p>
+
+
+
+
+                <div>
+                    <img src="imgs/map01.png" alt=""> <span style="width: 10px;position: relative;left: -20px;color: white;">1</span>华润置地 <b><img src="imgs/map.png" alt=""> 525米</b>
+                </div>
+                <div>
+                    <img src="imgs/map01.png" alt=""> <span style="width: 10px;position: relative;left: -20px;color: white;">2</span>华润置地 <b><img src="imgs/map.png" alt=""> 525米</b>
+                </div>
+                <div>
+                    <img src="imgs/map01.png" alt=""> <span style="width: 10px;position: relative;left: -20px;color: white;">3</span>华润置地 <b><img src="imgs/map.png" alt=""> 525米</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="phone">
+        <h3>楼盘相册
+            <span class="pss">
+                <b>户型图(19)</b>
+                <b>交通图(10)</b>
+                <b>效果图(3)</b>
+                <b>更多></b>
+            </span>
+        </h3>
+
+        <div class="pdiv">
+            <div class="phone-div">
+                <img src="imgs/banner.jpg" alt="">
+                <p>鸟瞰图</p>
+            </div>
+            <div class="phone-div">
+                    <img src="imgs/banner.jpg" alt="">
+                    <p>鸟瞰图</p>
+            </div>
+            <div class="phone-div">
+                <img src="imgs/banner.jpg" alt="">
+                <p>鸟瞰图</p>
+            </div>
+            <div class="phone-div">
+                <img src="imgs/banner.jpg" alt="">
+                <p>鸟瞰图</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="like">
+        <h3>猜你喜欢</h3>
+        <div class="like-li">
+            <img src="imgs/banner.jpg" alt="">
+            <h4>房山五和万科长阳天地</h4>
+            <p>均价 <span>8399元/㎡</span></p>
+        </div>
+        <div class="like-li">
+            <img src="imgs/banner.jpg" alt="">
+            <h4>房山五和万科长阳天地</h4>
+            <p>均价 <span>8399元/㎡</span></p>
+        </div>
+        <div class="like-li">
+            <img src="imgs/banner.jpg" alt="">
+            <h4>房山五和万科长阳天地</h4>
+            <p>均价 <span>8399元/㎡</span></p>
+        </div>
+        <div class="like-li">
+            <img src="imgs/banner.jpg" alt="">
+            <h4>房山五和万科长阳天地</h4>
+            <p>均价 <span>8399元/㎡</span></p>
+        </div>
+        <div class="like-li">
+            <img src="imgs/banner.jpg" alt="">
+            <h4>房山五和万科长阳天地</h4>
+            <p>均价 <span>8399元/㎡</span></p>
+        </div>
+    </div>
+
+	<!--弹出层-->
+	<div class="alert">
+		<div class="alert-inform">
+			<table border="1" cellspacing="0" cellpadding="0" bordercolor="#C5DDF4" width="100%">
+				<tr>
+					<td colspan="8" class="blue">
+						房屋基本情况
+						<div class="alert-close">
+							关闭
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="blue">
+						单元号
+					</td>
+					<td class="blue">
+						房间号
+					</td>
+					<td class="blue">
+						房间用途
+					</td>
+					<td class="blue">
+						房屋结构
+					</td>
+					<td class="blue">
+						建筑面积
+					</td>
+					<td class="blue">
+						套内面积
+					</td>
+					<td class="blue">
+						分摊面积
+					</td>
+					<td class="blue">
+						房屋状态
+					</td>
+				</tr>
+				<tr>
+					<td>
+						1
+					</td>
+					<td>
+						703
+					</td>
+					<td>
+						住宅
+					</td>
+					<td>
+						钢榻
+					</td>
+					<td>
+						102.78
+					</td>
+					<td>
+						74.98
+					</td>
+					<td>
+						27.80
+					</td>
+					<td>
+						可销售
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="blue">
+						合同备案号
+					</td>
+					<td colspan="2">
+						
+					</td>
+					<td colspan="2" class="blue">
+						备案日期
+					</td>
+					<td colspan="2">
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="alert-img">
+			<div class="alert-imgbox">
+				<img src="imgs/01.jpg"/>
+			</div>
+			<div class="alert-swiper">
+				<div class="alert-top">
+					<img src="imgs/top.png"/>
+				</div>
+				<div class="alert-bot">
+					<img src="imgs/bot.png"/>
+				</div>
+				 <ul>
+				 	<li>
+				 		<img src="imgs/03-zhongtu.jpg"/>
+				 	</li>
+				 	<li>
+				 		<img src="imgs/03-zhongtu.jpg"/>
+				 	</li>
+				 	<li>
+				 		<img src="imgs/03-zhongtu.jpg"/>
+				 	</li>
+				 	<li>
+				 		<img src="imgs/03-zhongtu.jpg"/>
+				 	</li>
+				 	<li>
+				 		<img src="imgs/03-zhongtu.jpg"/>
+				 	</li>
+				 	<li>
+				 		<img src="imgs/03-zhongtu.jpg"/>
+				 	</li>
+				 	<li>
+				 		<img src="imgs/03-zhongtu.jpg"/>
+				 	</li>
+				 </ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		    $(function(){
+		    	$('.spp b').click(function(){
+		    		$('.alert').show()
+		    	})
+		    	$('.alert-close').click(function(){
+		    		$('.alert').hide()
+		    	})
+		    	$('.alert-top').click(function(){
+		    		var offtop=$('.alert-swiper ul').css('margin-top')
+		    		if(parseInt(offtop)<0){
+		    			$('.alert-swiper ul').css('margin-top',(parseInt(offtop)+120)+'px')
+		    		}
+		    	})
+		    	$('.alert-bot').click(function(){
+		    		var offtop=parseInt($('.alert-swiper ul').css('margin-top'))
+		    		var offheight=parseInt($('.alert-swiper ul').css('height'))
+		    		if(parseInt(offtop)>parseInt('-'+(offheight-240))){
+		    			$('.alert-swiper ul').css('margin-top',offtop-120+'px')
+		    		}
+		    		console.log(parseInt(offtop))
+		    	})
+		    })
+	</script>
+	<!--底部-->
+     <div class="foot">
+                <div class="foot-title">
+                	友情链接
+                </div>
+                <div class="foot-li">
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                    <b><a href="#">徐州房产网</a></b>
+                </div>
+                <div class="foot-div">
+                	<span></span>关于我们</span><span class="shuxian">||</span><span>www.u581.com</span><span class="shuxian">||</span><span>网站合作</span><span class="shuxian">||</span><span>联系我们</span><span class="shuxian">||</span><span>招聘信息</span><span class="shuxian">||</span><span>网站地图</span><span class="shuxian">||</span><span>苹果客户端</span><span class="shuxian">||</span><span>安卓客户端</span><span class="shuxian">||</span><span>开发平台</span><span class="shuxian">||</span><span>服务声明</span><span class="shuxian">||</span><span>安全联盟</span><span class="shuxian">||</span><span>加盟网天下</span>
+                </div>
+                <div class="foot-p">
+                        <p>Copyright © 2017 北京拓世宏业科技发展有限公司Beijing Tuo Shi Hong Ye Science&Technology Development Co.,Ltd  版权所有</p>
+                        <p>京ICP备17002856号   京公网安备 11000002002008号 合字B2-20160008</p>
+                        <p>信息网络传播视听节目许可证照0108274号</p>
+                        <p>违法和不良信息举报电话：010-56318764 举报邮箱：jubao@fang.com  意见反馈</p>
+                </div>
+                <div class="foot-img">
+                    <img src="imgs/banner.jpg" alt="">
+                    <img src="imgs/banner.jpg" alt="">
+                    <img src="imgs/banner.jpg" alt="">
+                    <img src="imgs/banner.jpg" alt="">
+                    <img src="imgs/banner.jpg" alt="">
+                </div>
+            </div>
+</div>
+
+
+
+
+
+</body>
+
+
+<script>
+    $('.btn').on('click',function() {
+        $(this).addClass('on').siblings().removeClass('on');
+    })
+</script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(117.464687,34.437928);//定义一个中心点坐标
+        map.centerAndZoom(point,13);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{title:"御景华庭",content:"我的备注",point:"117.47058|34.437809",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+        ,{title:"我河畔花都",content:"我的备注",point:"117.460016|34.430425",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor:"#808080",
+                color:"#333",
+                cursor:"pointer"
+            });
+
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://map.baidu.com/image/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+
+
+<script>
+        $('.maptab-p b').on('click',function() {
+            $(this).addClass('pb').siblings().removeClass('pb');
+        })
+        $('.content-top h3 b').on('click',function() {
+            $(this).addClass('thb').siblings().removeClass('thb');
+        })
+</script>
+
+</html>

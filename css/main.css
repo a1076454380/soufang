@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input,span{margin:0;padding:0;}
+body{font-size:12px;font-family: "Microsoft Yahei","微软雅黑";}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;border:none; background:none;}
+textarea{resize:none;}
+a{text-decoration:none;display:block;}
+
+/*放大镜*/
+#preview{
+    width:600px;
+    position:relative;
+	margin:0px auto;
+
+}
+.fdj-wrap{
+    width:1000px;
+    height:500px;
+    /*background:#abcdef;*/
+    margin:10px auto 0 auto;
+}
+
+#img-medium{
+    width:600px;
+    height:380px;
+    /*border:1px solid #abcdef;*/
+}
+
+.fdj-wrap .img-small{
+    width:600px;
+    height:80px;
+    position:relative;
+}
+/*小图导航*/
+.fdj-wrap .img-small .img-list-items{
+    width:600px;
+    height:84px;
+    position:absolute;
+    left:0;
+    top:0;
+    overflow:hidden;
+}
+.fdj-wrap .img-small .left,.fdj-wrap .img-small .right{
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 33px;
+   
+    z-index: 111;
+    top: 24px;
+}
+.left{
+    left:0;
+     background: url(http://img1.soufun.com/house/images/housedetail_201609/hdbg.png) no-repeat;
+}
+.right{
+    right:0;
+    background: url(http://img1.soufun.com/house/images/housedetail_201609/hdbg.png) no-repeat;
+    background-position-x:-23px ;
+}
+.fdj-wrap .img-small .img-list-items ul{
+    /*width:1000px;*/
+    /*height:58px;*/
+    position:absolute;
+    top:0;
+    left:0;
+}
+.fdj-wrap .img-small .img-list-items ul li{
+    float:left;
+    text-align:center;
+    width:112px;
+    height: 80px;
+   position: relative;
+   margin:0 10px 5px 0;
+   box-sizing: border-box;
+}
+.fdj-wrap .img-small .img-list-items ul li img{
+	width: 112px;
+	height: 80px;
+    cursor:pointer;
+}
+.fdj-wrap .img-small .img-list-items ul li .text{
+	position: absolute;
+    bottom: -2px;
+    width: 113px;
+    height: 26px;
+    left: 1px;
+    line-height: 26px;
+    text-align: center;
+    z-index: 101;
+    font-size: 12px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+}
+/*.fdj-wrap .img-small .img-list-items ul li img:hover{
+    border:2px solid #e4393c;
+    width:52px;
+    height:52px;
+}*/
+/*大图*/
+#img-big{
+    display:none;
+    width:600px;
+    height:360px;
+    position:absolute;
+    top:0px;
+    left:600px;
+    border:1px solid #abcdef;
+    overflow:hidden;
+}
+#img-big img{
+    
+    position:absolute;
+    top:0;
+    left:0;
+}
+/*遮罩层*/
+#mark{
+    width:300px;
+    height:300px;
+    opacity:0.5;
+    filter: alpha(opacity=50);
+    background:#abcdef;
+    cursor:move;
+    position:absolute;
+    display:none;
+}
